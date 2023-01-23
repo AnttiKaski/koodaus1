@@ -24,23 +24,24 @@ from time import time
 #print(aika2)
 #print(aika2-aika1)
 
-aikaleima = time.time()
+aikaleima = time()
 
-esimerkki_kuvio={
+esimerkki_kuvio = {
     "nimi": "Esimerkki",
     "tyyppi": "monikulmio",
     "luotu": ctime(aikaleima),
     "pisteet": [
         {"x": 10, "y": 20, "z": 30},
         {"x": 20, "y": 5, "z": 10},
-        {"x": 30, "y": 15. "z": 20}
-    ]
+        {"x": 30, "y": 15, "z": 20},
+    ],
 }
 
-pprint.pprint(esimerkki_kuvio, sort_dicts=False)
+pprint(esimerkki_kuvio, sort_dicts=False)
 
 esimerkki_kuvio_muotoiltu_teksti = pformat(esimerkki_kuvio)
 
 #Muutetaan muotoiltu tkesti isoiksi kirjaimiksi ja tulostetaan
 # huom:\n = rivivaihto
+
 print("Muotoiltu teksti:\n", esimerkki_kuvio_muotoiltu_teksti.upper())
