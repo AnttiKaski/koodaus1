@@ -1,7 +1,7 @@
 import datetime
 
 class Ihminen:
-    def __init__(self,etunimi, sukunimi, syntymavuosi):
+    def __init__(self, etunimi, sukunimi, syntymavuosi):
         self.etunimi = etunimi
         self.sukunimi = sukunimi
         self.syntymavuosi = syntymavuosi
